@@ -33,7 +33,7 @@ int main(){
     while (!(C[4] == 1)){
 
         if(contador == 0)
-            printf("Torre de Hanói: \n");
+            printf("Torre de Hanoi: \n");
 
         for(int i = 4;i >= 0; i--) //Imprime os elementos de cada torre (A,B,C);
             printf("%d %d %d\n", A[4-i], B[i], C[i]);
@@ -77,7 +77,7 @@ int main(){
                         if(A[4] == 0)
                             pontA = NULL;
                         }else
-                            printf("Jogada Inválida!\n\n");
+                            printf("Jogada Invalida!\n\n");
                             
 
                 }else if(jogada[0] == 'A' && jogada[1] == 'C'){
@@ -98,7 +98,7 @@ int main(){
                         if(A[4] == 0)
                             pontA = NULL;
                         }else
-                            printf("Jogada Inválida!\n\n");
+                            printf("Jogada Invalida!\n\n");
 
                 }else if(jogada[0] == 'B' && jogada[1] == 'A'){
 
@@ -116,7 +116,7 @@ int main(){
                         pontB--;
                         pontA--;
                         }else
-                            printf("Jogada Inválida!\n\n");
+                            printf("Jogada Invalida!\n\n");
 
                         if(B[0] == 0)
                             pontB = NULL;
@@ -134,7 +134,7 @@ int main(){
                         pontB--;
                         pontC++;
                         }else
-                            printf("Jogada Inválida!\n\n");
+                            printf("Jogada Invalida!\n\n");
 
                         if(B[0] == 0)
                             pontB = NULL;
@@ -155,7 +155,7 @@ int main(){
                         pontC--;
                         pontA--;
                         }else
-                            printf("Jogada Inválida!\n\n");
+                            printf("Jogada Invalida!\n\n");
 
                         if(C[0] == 0)
                             pontC = NULL;
@@ -173,20 +173,20 @@ int main(){
                         pontB++;
                         pontC--;
                         }else
-                            printf("Jogada Inválida!\n\n");
+                            printf("Jogada Invalida!\n\n");
 
                         if(C[0] == 0)
                             pontC = NULL;
                 }else{
-                printf("Jogada Inválida!\n\n");
+                printf("Jogada Invalida!\n\n");
                 contador++;
             }
             }else{
-                printf("Jogada Inválida!\n\n");
+                printf("Jogada Invalida!\n\n");
                 contador++;
             }
         }else{
-            printf("Jogada Inválida!\n\n");
+            printf("Jogada Invalida!\n\n");
             while(getchar() != '\n')
                 contador++;
         }
@@ -195,7 +195,7 @@ int main(){
     for(int i = 4;i >= 0; i--)
         printf("%d %d %d\n", A[4-i], B[i], C[i]);
 
-    printf("\nParabéns, você ganhou!\n");
+    printf("\nParabens, voce ganhou!\n");
 
     return 0;
 }

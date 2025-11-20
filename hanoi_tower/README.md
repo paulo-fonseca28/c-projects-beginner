@@ -95,10 +95,11 @@ From the folder where `hanoi_tower.c` is located, run:
 
 ```bash
 gcc -Wall -Wextra -std=c11 -o hanoi_tower hanoi_tower.c
+```
 
 This will generate an executable named hanoi_tower; run the program with ./hanoi_tower
 
-### Learning Outcomes
+## Learning Outcomes
 
 By building this project, the following skills were practiced:
 
@@ -110,6 +111,7 @@ By building this project, the following skills were practiced:
 
 ## Possible Improvements
 
+Judging from nowadays (Nov - 2025)
 Future enhancements could include:
 
 - Allowing a variable number of disks (instead of being fixed at 5)

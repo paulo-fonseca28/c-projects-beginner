@@ -92,12 +92,12 @@ int main() {
     long long int decimal1, decimal2, decimalResultante;
     int opcao;
 
-    printf("\nO primeiro digito do binário, será responsável pelo sinal positivo/negativo do número.");
+    printf("\nO primeiro digito do binario, sera responsavel pelo sinal positivo/negativo do numero.");
 do {
-        printf("\nLembre-se: O maior valor em binário suportado são 63 números '1' consecutivos ou 64 caracteres incluindo o valor '0' para positivo e o valor '1' para negativo.\n"
+        printf("\nLembre-se: O maior valor em binario suportado sao 63 numeros '1' consecutivos ou 64 caracteres incluindo o valor '0' para positivo e o valor '1' para negativo.\n"
         "Digite:\n0 para sair do programa.\n1 para Somar.\n2 para Subtrair.\n3 para Multiplicar.\n4 para Dividir.\n"
         "5 para o Resto da Divisão.\n6 para a Potência.\n7 para o Valor Absoluto(sem Sinal).\n8 para o Valor em Fatorial.\n"
-        "9 para Converter o numero binário em Decimal.\n10 para Converter o numero binário em Hexadecimal.\n11 para Converter o número binário em Octal.\n");
+        "9 para Converter o numero binário em Decimal.\n10 para Converter o numero binario em Hexadecimal.\n11 para Converter o numero binario em Octal.\n");
         printf("-> ");
         scanf("%d", &opcao);
         getchar(); // Limpa o buffer
@@ -108,11 +108,11 @@ do {
                 break;
 
             case 1:
-                printf("\nDigite o primeiro número em binário:\n");
+                printf("\nDigite o primeiro numero em binario:\n");
                 fgets(binario1, TAM, stdin);
                 binario1[strcspn(binario1, "\n")] = 0;
 
-                printf("Digite o segundo número em binário:\n");
+                printf("Digite o segundo numero em binario:\n");
                 fgets(binario2, TAM, stdin);
                 binario2[strcspn(binario2, "\n")] = 0;
 
@@ -121,15 +121,15 @@ do {
                 decimalResultante = decimal1 + decimal2;
 
                 decimalBinario(decimalResultante, binarioResultante);
-                printf("Binário resultante da soma é: %s\n", binarioResultante);
+                printf("Binario resultante da soma eh: %s\n", binarioResultante);
                 break;
 
             case 2:
-                printf("\nDigite o primeiro número em binário:\n");
+                printf("\nDigite o primeiro numero em binario:\n");
                 fgets(binario1, TAM, stdin);
                 binario1[strcspn(binario1, "\n")] = 0;
 
-                printf("Digite o segundo número em binário:\n");
+                printf("Digite o segundo numero em binario:\n");
                 fgets(binario2, TAM, stdin);
                 binario2[strcspn(binario2, "\n")] = 0;
 
@@ -138,15 +138,15 @@ do {
                 decimalResultante = decimal1 - decimal2;
 
                 decimalBinario(decimalResultante, binarioResultante);
-                printf("Binário resultante da subtração é: %s\n", binarioResultante);
+                printf("Binario resultante da subtracao eh: %s\n", binarioResultante);
                 break;
 
             case 3:
-                printf("\nDigite o primeiro número em binário:\n");
+                printf("\nDigite o primeiro numero em binario:\n");
                 fgets(binario1, TAM, stdin);
                 binario1[strcspn(binario1, "\n")] = 0;
 
-                printf("Digite o segundo número em binário:\n");
+                printf("Digite o segundo numero em binario:\n");
                 fgets(binario2, TAM, stdin);
                 binario2[strcspn(binario2, "\n")] = 0;
 
@@ -155,16 +155,16 @@ do {
                 decimalResultante = decimal1 * decimal2;
 
                 decimalBinario(decimalResultante, binarioResultante);
-                printf("Binário resultante da multiplicação é: %s\n", binarioResultante);
+                printf("Binario resultante da multiplicacao eh: %s\n", binarioResultante);
 
                 break;
 
             case 4:
-                printf("\nDigite o primeiro número em binário:\n");
+                printf("\nDigite o primeiro numero em binario:\n");
                 fgets(binario1, TAM, stdin);
                 binario1[strcspn(binario1, "\n")] = 0;
 
-                printf("Digite o segundo número em binário:\n");
+                printf("Digite o segundo numero em binario:\n");
                 fgets(binario2, TAM, stdin);
                 binario2[strcspn(binario2, "\n")] = 0;
 
@@ -173,15 +173,15 @@ do {
                 decimalResultante = decimal1 / decimal2;
 
                 decimalBinario(decimalResultante, binarioResultante);
-                printf("Binário resultante da divisão é: %s\n", binarioResultante);
+                printf("Binario resultante da divisao eh: %s\n", binarioResultante);
                 break;
 
             case 5:
-                printf("\nDigite o primeiro número em binário:\n");
+                printf("\nDigite o primeiro numero em binario:\n");
                 fgets(binario1, TAM, stdin);
                 binario1[strcspn(binario1, "\n")] = 0;
 
-                printf("Digite o segundo número em binário:\n");
+                printf("Digite o segundo numero em binario:\n");
                 fgets(binario2, TAM, stdin);
                 binario2[strcspn(binario2, "\n")] = 0;
 
@@ -190,75 +190,75 @@ do {
                 decimalResultante = decimal1 % decimal2;
 
                 decimalBinario(decimalResultante, binarioResultante);
-                printf("Binário resultante do resto da divisão é: %s\n", binarioResultante);
+                printf("Binario resultante do resto da divisao eh: %s\n", binarioResultante);
 
                 break;
 
             case 6:
-                printf("\nDigite o primeiro número em binário (base da operação):\n");
+                printf("\nDigite o primeiro numero em binario (base da operacao):\n");
                 fgets(binario1, TAM, stdin);
                 binario1[strcspn(binario1, "\n")] = 0;
 
-                printf("Digite o segundo número em binário (Expoente da operação):\n");
+                printf("Digite o segundo numero em binario (expoente da operacao):\n");
                 fgets(binario2, TAM, stdin);
                 binario2[strcspn(binario2, "\n")] = 0;
 
                 decimal1 = binarioDecimal(binario1);
                 decimal2 = binarioDecimal(binario2);
                     if(decimal2 < 0){
-                        printf("Não é permitido um expoente negativo.\n");
+                        printf("NNao e permitido um expoente negativo.\n");
                         break;
                 }
                 decimalResultante = potencia(decimal1,decimal2);
 
                 decimalBinario(decimalResultante, binarioResultante);
-                printf("Binário resultante da potência é: %s\n", binarioResultante);
+                printf("Binario resultante da potencia eh: %s\n", binarioResultante);
 
                 break;
 
             case 7:
-                printf("\nDigite o número em binário:\n");
+                printf("\nDigite o numero em binario:\n");
                 fgets(binario1, TAM, stdin);
                 binario1[strcspn(binario1, "\n")] = 0;
 
                 if (strlen(binario1) > 0) {
                     memmove(binario1, binario1 + 1, strlen(binario1));
                 }
-                printf("O valor do binário absoluto: %s\n", binario1);
+                printf("O valor do binario absoluto eh: %s\n", binario1);
 
                 break;
 
             case 8:
-                printf("\nDigite o número em binário:\n");
+                printf("\nDigite o numero em binario:\n");
                 fgets(binario1, TAM, stdin);
                 binario1[strcspn(binario1, "\n")] = 0;
 
                 decimal1 = binarioDecimal(binario1);
                 if(decimal1 < 0){
-                    printf("Não pode ter fatorial com números negativos.\n");
+                    printf("Nao pode ter fatorial com numeros negativos.\n");
                     break;
                 }
                 decimalResultante = fatorial(decimal1);
                 decimalBinario(decimalResultante, binarioResultante);
 
-                printf("O valor fatorial do binário é: %s\n", binarioResultante);
+                printf("O valor fatorial do binario eh: %s\n", binarioResultante);
 
                 break;
 
             case 9:
-                printf("\nDigite o número em binário, para sabermos qual é o seu valor em Decimal:\n");
+                printf("\nDigite o numero em binario, para sabermos qual eh o seu valor em Decimal:\n");
                 fgets(binario1, TAM, stdin);
                 binario1[strcspn(binario1, "\n")] = 0;
 
                 decimal1 = binarioDecimal(binario1);
-                printf("O valor decimal do binário é: %lld\n", decimal1);
+                printf("O valor decimal do binario eh: %lld\n", decimal1);
 
                 break;
 
             case 10:;
                 char *hexadecimal;
 
-                printf("\nDigite um número binário: ");
+                printf("\nDigite um numero binario: ");
                 fgets(binario1, TAM, stdin);
                 binario1[strcspn(binario1, "\n")] = 0;
                 
@@ -266,7 +266,7 @@ do {
 
                 hexadecimal = decimalParaHexadecimal(decimal1);
 
-                printf("O valor em hexadecimal é: %s\n", hexadecimal);
+                printf("O valor em hexadecimal eh: %s\n", hexadecimal);
 
                     free(hexadecimal);
                 break;
@@ -274,7 +274,7 @@ do {
             case 11:;
                 char *octal;
 
-                printf("\nDigite um número binário: ");
+                printf("\nDigite um numero binario: ");
                 fgets(binario1, TAM, stdin);
                 binario1[strcspn(binario1, "\n")] = 0;
                 
@@ -282,14 +282,14 @@ do {
 
                 octal = decimalParaOctal(decimal1);
 
-                printf("O valor em octal é: %s\n", octal);
+                printf("O valor em octal eh: %s\n", octal);
 
                     free(octal);
 
                 break;
             
             default:
-                printf("Opção inválida, digite um número entre 0 e 11.\n");
+                printf("Opcao invalida, digite um numero entre 0 e 11.\n");
         }
         
     }while(opcao != 0);

@@ -239,7 +239,7 @@ int main() {
                         }
                     }
                     if(setorEncontrado == -1){
-                        printf("Nome do setor inválido.\n");
+                        printf("Nome do setor invalido.\n");
                         break;
                     }
 
@@ -255,14 +255,14 @@ int main() {
                     }
 
                     if(maisAlto > 0){
-                        printf("O animal mais alto do setor '%s' é o(a): %s com %.2f metros.\n", nomeSetor, maiorAltura, maisAlto);
+                        printf("O animal mais alto do setor '%s' eh o(a): %s com %.2f metros.\n", nomeSetor, maiorAltura, maisAlto);
                     } else {
-                        printf("Não há animais no setor '%s'.\n", nomeSetor);
+                        printf("Não ha animais no setor '%s'.\n", nomeSetor);
                     }
                 break;
 
             default:;
-                printf("\nOpção inválida, digite um número entre 0 e 7.\n");
+                printf("\nOpcao invalida, digite um numero entre 0 e 7.\n");
         }
     } while (opcao != 0);
 
